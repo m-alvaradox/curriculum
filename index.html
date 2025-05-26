@@ -6,7 +6,10 @@
     <meta name="description" content="Currículum vitae de Mario Alvarado, ingeniero en software con experiencia en desarrollo de aplicaciones.">
     <meta name="author" content="Mario Alvarado">
     <title>Mi Currículum</title>
-    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "stylesheets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -26,37 +29,45 @@
     </nav>
 
     <main>
+
         <section id="perfil">
-            <h2>Perfil</h2>
-            <img src = "/resources/user.jpg" alt = "Foto perfil" width="150px">
-
-
+            <h2 class = "subtitle">Perfil</h2>
+            <img src="https://placehold.co/200x200" alt="Foto de perfil" id="photo"/>
         </section>
+
+        <section id="presentacion">
+            <h2 class = "subtitle">Presentación</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VDO9r5RexXU?si=pc3HrkbK15Tv7KuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>  
+
         <section id="resumen">
-            <h2>Resumen</h2>
-            <p>p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum deleniti hic amet ea, repellat, minima quod ipsa voluptates nisi repudiandae odio sunt pariatur soluta eligendi esse quos iure temporibus illum?</p>
+            <h2 class = "subtitle">Resumen</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum deleniti hic amet ea, repellat, minima quod ipsa voluptates nisi repudiandae odio sunt pariatur soluta eligendi esse quos iure temporibus illum?</p>
         </section>
 
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class = "subtitle">Experiencia</h2>
         </section>
 
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class = "subtitle">Educación</h2>
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class = "subtitle">Habilidades</h2>
         </section>
 
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 class = "subtitle">Proyectos</h2>
         </section>
 
     </main>
 
     <section>
-        <h2> Contacto </h2>
+        <h2 class = "subtitle"> Contacto </h2>
+        <p>Ubicación: Guayaquil, Ecuador</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0151653734274!2d-79.96456940000002!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1747844278366!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         <form action = "#" method="post">
             <fieldset>
                 <legend>Contactanos llenando todos los campos</legend>
