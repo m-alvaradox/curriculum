@@ -2,6 +2,18 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(to right, #ffffff, #dfe9f3);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+
 h1 {
     /* Alineación del texto */
     text-align: center;
@@ -80,4 +92,8 @@ section#referencias article {
 
 span {
   font-weight: bold;
-}	
+}
+
+article {
+  text-align: center;
+}
