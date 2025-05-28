@@ -1,5 +1,24 @@
+:root {
+    --blanco : #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #04146e;
+    --gris: #757575;
+}
+
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-size: cover;
+    background-color: #2b57a8;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 body {
@@ -19,7 +38,7 @@ h1 {
     text-align: center;
     /* Grosor de la fuente negrita */
     font-weight: bold;
-    font-family: "WDXL Lubrifont TC";
+    font-family: "Vollkorn SC", sans-serif;
 }
 
 .subtitle {
@@ -28,8 +47,8 @@ h1 {
 }
 
 #photo {
-  width: 100px;      /* o el tamaño que prefieras */
-  height: 100px;     /* asegúrate que sea igual al width */
+  width: 150px;      /* o el tamaño que prefieras */
+  height: 150px;     /* asegúrate que sea igual al width */
   object-fit: cover; /* para que la imagen no se deforme */
   border-radius: 50%;
 }
@@ -40,13 +59,28 @@ footer p {
 }
 
 nav > ul {
+    background-color: var(--secundario);
     display: flex;
-    
     justify-content: space-between; 
     flex-direction: row; 
-    align-items:center; 
-    gap: 1rem;
+    align-items:center;
+    gap:1rem;
+    padding: 1rem 1rem;
+    margin: auto;
     list-style: none;
+}
+
+nav > ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+nav > ul li a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
 }
 
 section {
