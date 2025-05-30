@@ -38,7 +38,7 @@ h1 {
     text-align: center;
     /* Grosor de la fuente negrita */
     font-weight: bold;
-    font-family: "SansSerifBldFLF", sans-serif;
+    font-family: "Vollkorn SC", sans-serif;
 }
 
 .subtitle {
@@ -139,11 +139,4 @@ article {
 
 p {
   font-family: 'Open Sans', sans-serif;
-}
-
-@font-face {
-    font-family: 'SansSerifBldFLF';
-    src: url('SansSerifBldFLF.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
