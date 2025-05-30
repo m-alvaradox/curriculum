@@ -2,8 +2,13 @@
     --blanco : #ffffff;
     --oscuro: #212121;
     --primario: #FFC107;
-    --secundario: #04146e;
+    --secundario: #31333b;
     --gris: #757575;
+}
+
+@font-face {
+  font-family: "SansSerifBldFLF";
+  src: url(/resources/fonts/SansSerifBldFLF.ttf) format("truetype");
 }
 
 * {
@@ -16,7 +21,7 @@ header {
     align-items: center;
     padding: 20px 40px;
     background-size: cover;
-    background-color: #2d58a7;
+    background-color: #156082;
     color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -38,7 +43,7 @@ h1 {
     text-align: center;
     /* Grosor de la fuente negrita */
     font-weight: bold;
-    font-family: "Vollkorn SC", sans-serif;
+    font-family: "SansSerifBldFLF", sans-serif;
 }
 
 .subtitle {
