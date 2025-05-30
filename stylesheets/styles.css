@@ -16,7 +16,7 @@ header {
     align-items: center;
     padding: 20px 40px;
     background-size: cover;
-    background-color: #2b57a8;
+    background-color: #2d58a7;
     color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -37,8 +37,7 @@ h1 {
     /* Alineación del texto */
     text-align: center;
     /* Grosor de la fuente negrita */
-    font-weight: bold;
-    font-family: "Vollkorn SC", sans-serif;
+    font-family: "SansSerifBldFLF", sans-serif;
 }
 
 .subtitle {
@@ -53,9 +52,14 @@ h1 {
   border-radius: 50%;
 }
 
-footer p {
-  text-align: right;
+footer {
+  text-align: left;
   font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-size: cover;
 }
 
 nav > ul {
@@ -73,7 +77,7 @@ nav > ul {
 nav > ul li a {
     color: var(--blanco);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     padding: 1rem;
 }
@@ -130,4 +134,8 @@ span {
 
 article {
   text-align: center;
+}
+
+p {
+  font-family: 'SansSerifBldFLF';
 }
