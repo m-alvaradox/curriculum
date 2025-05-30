@@ -114,11 +114,47 @@ section > form {
 }
 
 section#presentacion {
+  position: relative;
+  width: 100%;
+  min-height: 400px; /* Asegura altura mínima */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: auto;
+  padding: 0; /* Elimina posibles espacios extra */
+}
+
+.video-bg-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px; /* Igual que la sección */
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.presentacion-texto {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: rgba(21, 96, 130, 0.3); /* opcional: oscurece el fondo para mejor legibilidad */
 }
 
 section#referencias {
