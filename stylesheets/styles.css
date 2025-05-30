@@ -113,6 +113,14 @@ section > form {
   column-gap: 1rem;
 }
 
+section#presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
 section#referencias {
      display: flex;
      flex-direction: row;
