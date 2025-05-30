@@ -2,13 +2,8 @@
     --blanco : #ffffff;
     --oscuro: #212121;
     --primario: #FFC107;
-    --secundario: #31333b;
+    --secundario: #262626;
     --gris: #757575;
-}
-
-@font-face {
-  font-family: "SansSerifBldFLF";
-  src: url(/resources/fonts/SansSerifBldFLF.ttf) format("truetype");
 }
 
 * {
@@ -42,8 +37,7 @@ h1 {
     /* Alineación del texto */
     text-align: center;
     /* Grosor de la fuente negrita */
-    font-weight: bold;
-    font-family: "SansSerifBldFLF", sans-serif;
+    font-family: "Hammersmith One", sans-serif;
 }
 
 .subtitle {
@@ -75,21 +69,23 @@ nav > ul {
     flex-direction: row; 
     align-items:center;
     gap:1rem;
-    padding: 1rem 1rem;
+    padding: 1rem 0rem;
     margin: auto;
     list-style: none;
 }
 
 nav > ul li a {
     color: var(--blanco);
+    font-family: "Hammersmith One", sans-serif;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 700;
-    padding: 1rem;
+    padding: 1.1rem;
+
 }
 
 nav > ul li a:hover {
-    background-color: var(--primario);
+    background-color: var(--blanco);
     color: var(--oscuro);
 }
 
@@ -143,5 +139,5 @@ article {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
 }
