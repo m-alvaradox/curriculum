@@ -14,7 +14,7 @@
     <header>
         <div>
             <h1>ALVARADO GILER<br>MARIO ALBERTO</h1>
-            <center><p><span>ESTUDIANTE<br>ING. EN SISTEMAS COMPUTACIONALES</p></span></center>
+            <center><p id="es"><span>ESTUDIANTE<br>ING. EN SISTEMAS COMPUTACIONALES</p></span></center>
         </div>
         <img src="resources/user_maag.jpg" alt="Foto de perfil" id="photo"/>
     </header>
@@ -47,40 +47,132 @@
         
         <section id="resumen">
             <h2 class = "subtitle">Resumen</h2>
-            <p>¡Hola!, mi nombre es Mario y soy estudiante de Ingeniería en Sistemas Computacionales de la ESPOL. Siempre con disposición de recibir retroalimentación y aprender diariamente.
-            Mi objetivo como futuro profesional es contribuir al desarrollo y mantenimiento de soluciones tecnológicas innovadoras en una organización que valore el aprendizaje y la colaboración. Busco adquirir experiencia práctica en áreas como desarrollo de software, gestión de bases de datos o redes, mientras aporto mis habilidades en programación, resolución de problemas y trabajo en equipo. Mi meta es crecer profesionalmente y generar un impacto positivo mediante la optimización de procesos y el uso eficiente de las tecnologías de la información </p>
+            <div class = "card">
+            <p>¡Hola!, mi nombre es Mario y soy estudiante de Ingeniería en Sistemas Computacionales de la ESPOL. </p></div>
         </section>
 
-        <section id="perfil">
-            <h2 class = "subtitle">Perfil</h2>
-            <ul>
-                <li>Fecha de Nacimiento: 26/01/2002</li>
-                <li>Estado Civil: Soltero</li>
-                <li>Ciudadanía: Ecuatoriana</li>
-                <li>Celular: 0945968847</li>
-                <li>Correo electrónico: maragile@espol.edu.ec</li>
-                <li>Domicilio: Guayaquil, Ecuador</li>
-            </ul>
-        </section>
-
-
-
-
+        <div class = "grid">
+            <section id="perfil">
+                <h2 id = "tarjetas" class = "subtitle">Perfil</h2>
+                <div class = "card">
+                    <ul>
+                        <li id="dif"><span>Fecha de Nacimiento:</span> 26/01/2002</li>
+                        <li id="dif"><span>Estado Civil:</span> Soltero</li>
+                        <li id="dif"><span>Ciudadanía: </span>Ecuatoriana</li>
+                        <li id="dif"><span>Celular:</span> 0945968847</li>
+                        <li id="dif"><span>Correo electrónico:</span> maragile@espol.edu.ec</li>
+                        <li id="dif"><span>Domicilio:</span> Guayaquil, Ecuador</li>
+                    </ul>
+                </div>
+            </section>
 
         <section id="experiencia">
-            <h2 class = "subtitle">Experiencia</h2>
+            <h2 id = "tarjetas" class = "subtitle">Experiencia</h2>
+            <div class = "card">
+                <table class="default">
+
+                    <tr>
+                        <th>Empresa/Institución</th>
+                        <th>Año</th>
+                        <th>Área</th>
+                    </tr>
+                    <tr>
+                        <th>SRI</th>
+                        <td>2019</td>
+                        <td>Asistencia al Contribuyente</td>
+                    </tr>
+
+                    <tr>
+                        <th>MARCAR</th>
+                        <td>2023</td>
+                        <td>Administración</td>
+                    </tr>
+
+                    <tr>
+                        <th>PANASA</th>
+                        <td>2025</td>
+                        <td>Ciencia de Datos</td>
+                    </tr>
+                </table>
+            </div>
         </section>
 
         <section id="educacion">
-            <h2 class = "subtitle">Educación</h2>
-        </section>
+            <h2 id = "tarjetas" class = "subtitle">Educación</h2>
+            <div class="card">
 
-        <section id="habilidades">
-            <h2 class = "subtitle">Habilidades</h2>
+                <div>
+                    <p class="grado">
+                        Ingeniería en Sistemas Computacionales
+                    </p>
+                    <p class="institucion">
+                        Escuela Superior Politécnica del Litoral
+                    </p>
+                    <p class="duracion">
+                        2021 - Actualidad
+                    </p>
+                </div>
+
+            </div>
+            
+
         </section>
 
         <section id="proyectos">
-            <h2 class = "subtitle">Proyectos</h2>
+            <h2 id = "tarjetas" class = "subtitle"">Proyectos</h2>
+
+            <div class="card">
+                <ul>
+                    <li id="dif">PickOCR</li>
+                    <li id="dif">Format Excel</li>
+                    <li id="dif">CarSPACE</li>
+                    <li id="dif">BibleSPACE</li>
+                    <li id="dif">ChatSPACE</li>
+                </ul>
+            </div>
+        </section>
+
+        </div>
+
+        <section id="habilidades">
+            <h2 id = "tarjetas" class = "subtitle">Habilidades</h2>
+
+
+            <div class="contenedor-tecnologias">
+            <div class="card">
+                <h3>Javascript</h3>
+                <img class="imgTec" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png">
+                <p>Nivel: <span>Básico</span></p>
+            </div>
+
+            <div class="card">
+                <h3>Python</h3>
+                <img class="imgTec" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+                <p>Nivel: <span>Intermedio</span></p>
+            </div>
+
+            <div class="card">
+                <h3>Java</h3>
+                <img class="imgTec" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="opencv">
+                <p>Nivel: <span>Intermedio</span></p>
+            </div>
+
+            <div class="card">
+                <h3>HTML</h3>
+                <img class="imgTec" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                <p>Nivel: <span>Básico</span></p>
+            </div>
+            <div class="card">
+                <h3>CSS</h3>
+                <img class="imgTec" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                <p>Nivel: <span>Básico</span></p>
+            </div>
+            <div class="card">
+                <h3>MySQL</h3>
+                <img class="imgTec" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
+                <p>Nivel: <span>Intermedio</span></p>
+            </div>
+        </div>
         </section>
 
     </main>
@@ -158,35 +250,6 @@
         </form>
     </section>
 
-    <h3> Experiencia </h3>
-	<table class="default">
-
-        <tr>
-            <th>Empresa/Institución</th>
-            <th>Año</th>
-            <th>Área</th>
-        </tr>
-        <tr>
-            <th>SRI</th>
-            <td>2019</td>
-            <td>Asistencia al Contribuyente</td>
-        </tr>
-
-        <tr>
-            <th>MARCAR</th>
-            <td>2023</td>
-            <td>Administración</td>
-        </tr>
-
-        <tr>
-            <th>PANASA</th>
-            <td>2025</td>
-            <td>Ciencia de Datos</td>
-        </tr>
-
-    
-
-    </table>
 
     <section id="referencias">
         

@@ -41,7 +41,7 @@ h1 {
 }
 
 .subtitle {
-  color: rgb(151 156 165 / 0.89);
+  color: var(--secundario);
   font-family: "Hammersmith One", sans-serif;
   text-transform: uppercase;
 }
@@ -89,21 +89,14 @@ nav > ul li a:hover {
     background-color: var(--gris);
 }
 
+nav{
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+}
+
 section {
-  border: 0.2pt solid #cedddd;
-  margin: 4px 2px 8px 2px;
   margin-bottom: 1.2rem;
-  padding: 1.5% 0.8%;
-
-  /* borde redondeado con un radio de 5 píxeles */
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-
-  /* sombra a un elemento */
-  -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-  -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-  box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
 
 section > form {
@@ -178,9 +171,6 @@ section#referencias article {
   flex: 1 1 calc(33.333% - 1rem);
 }
 
-span {
-  font-weight: bold;
-}
 
 article {
   text-align: center;
@@ -192,6 +182,7 @@ p span {
 
 p#code {
   font-family: 'Cascadia Code', sans-serif;
+  color: white;
 }
 
 h2#bienvenida {
@@ -200,3 +191,154 @@ h2#bienvenida {
   font-size: 2.5rem;
   margin: auto;
 }
+
+h2#tarjetas {
+    display: block;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.grid{
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    width: 80%;
+
+    background: #f2f7f5;
+    box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.card:hover{
+    box-shadow: 0 8px 32px 0 rgba(60, 114, 230, 0.37);
+}
+
+.grado{
+    font-size: large;
+    font-weight: bold;
+    color: #757575;
+    text-align: center;
+} 
+
+.institucion{
+    color: gray;
+    font-size: 14px;
+}
+
+.duracion{
+    color: gray;
+    font-size: 12px;
+}
+
+.contenedor-tecnologias{
+    display: grid;
+    width: 90%;
+    max-width: 1240px;
+    margin: 10px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.contenedor-tecnologias img{
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor-tecnologias .card:hover{
+    font-weight: bold;
+    scale: 1.1;
+}
+
+li#dif {
+    list-style: none;
+    margin: 0.5rem 0;
+    color: #757575;
+}
+
+li span {
+    font-weight: bold;
+}
+
+p {
+  color:#757575;
+}
+
+p#es {
+  color: white;
+}
+
+.default {
+  color: #757575;
+}
+
+/* Mejora visual para la tabla de experiencia */
+table.default {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #f2f7f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.10);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+table.default th, table.default td {
+  padding: 0.9em 1.2em;
+  text-align: left;
+}
+
+table.default th {
+  background: #e3eaf0;
+  color: #757575;
+  font-weight: bold;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.05em;
+  border-bottom: 2px solid #cedddd;
+}
+
+table.default tr {
+  transition: background 0.2s;
+}
+
+table.default tr:not(:first-child):hover {
+  background: #e6f2fa;
+}
+
+table.default td {
+  color: #444;
+  font-size: 1em;
+  border-bottom: 1px solid #e3eaf0;
+}
+
+table.default tr:last-child td {
+  border-bottom: none;
+}
+
+table.default th:first-child,
+table.default td:first-child {
+  font-weight: bold;
+  color: #757575;
+}
+
