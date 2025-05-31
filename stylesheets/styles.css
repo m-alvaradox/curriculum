@@ -313,7 +313,6 @@ table.default th {
   background: #e3eaf0;
   color: #757575;
   font-weight: bold;
-  font-family: "Hammersmith One", sans-serif;
   font-size: 1.05em;
   border-bottom: 2px solid #cedddd;
 }
@@ -340,5 +339,90 @@ table.default th:first-child,
 table.default td:first-child {
   font-weight: bold;
   color: #757575;
+}
+
+
+.card.proyectos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.card.proyectos li {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  padding: 0.7em 0 0.7em 0.5em;
+  font-size: 1.08em;
+  color: #262626;
+  border-bottom: 1px solid #e3eaf0;
+  transition: background 0.2s;
+  color: #757575;
+}
+
+.card.proyectos li:last-child {
+  border-bottom: none;
+}
+
+.card.proyectos li::before {
+  content: "🚀";
+  font-size: 1em;
+  color: #156082;
+  margin-right: 0.5em;
+}
+
+.card.proyectos {
+  align-items: flex-start;
+  padding: 2rem 2.5rem;
+  background-color: #eaf0ee;
+  
+}
+
+.card.perfil {
+  padding: 2rem 2.5rem;
+  background: #f2f7f5;
+  box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.37 );
+  border-radius: 14px;
+  width: 90%;
+  max-width: 480px;
+  margin: 2rem auto;
+  font-size: 1.08em;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card.perfil ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card.perfil li {
+  margin-bottom: 1.1em;
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.card.perfil li strong {
+  color: #757575;
+  min-width: 10em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.card.perfil li:last-child {
+  margin-bottom: 0;
+}
+
+.card.perfil:hover {
+  box-shadow: 0 12px 32px 0 rgba(60, 114, 230, 0.37);
 }
 
