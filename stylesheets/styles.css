@@ -42,6 +42,7 @@ h1 {
 
 .subtitle {
   color: rgb(151 156 165 / 0.89);
+  font-family: "Hammersmith One", sans-serif;
   text-transform: uppercase;
 }
 
@@ -85,8 +86,7 @@ nav > ul li a {
 }
 
 nav > ul li a:hover {
-    background-color: var(--primario);
-    color: var(--oscuro);
+    background-color: var(--gris);
 }
 
 section {
@@ -111,6 +111,10 @@ section > form {
   grid-template-columns: 1fr;
   row-gap: 1rem;
   column-gap: 1rem;
+}
+
+section#resumen{
+  text-align: center;
 }
 
 section#presentacion {
@@ -182,6 +186,17 @@ article {
   text-align: center;
 }
 
-p {
+p span {
   font-family: 'Hammersmith One', sans-serif;
+}
+
+p#code {
+  font-family: 'Cascadia Code', sans-serif;
+}
+
+h2#bienvenida {
+  font-family: 'Jersey 25', sans-serif;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  margin: auto;
 }
