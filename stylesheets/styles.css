@@ -63,6 +63,20 @@ footer {
   background-size: cover;
 }
 
+footer .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Espacio entre los íconos */
+    width: auto;
+    height: auto;
+}
+
+footer .redes {
+    display: flex;
+    gap: 1rem; /* Espacio entre los botones */
+}
+
 nav > ul {
     background-color: var(--secundario);
     display: flex;
@@ -516,5 +530,26 @@ section#contacto {
 p#black {
   color: var(--oscuro);
   font-weight: bold;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn i {
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover i {
+    color: #757575;
+    scale: 1.2;
 }
 
