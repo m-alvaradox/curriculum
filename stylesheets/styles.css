@@ -154,7 +154,7 @@ section#presentacion {
   align-items: center;
   justify-content: center;
   min-height: 400px;
-  background: rgba(21, 96, 130, 0.3); /* opcional: oscurece el fondo para mejor legibilidad */
+  background: rgba(21, 96, 130, 0); /* opcional: oscurece el fondo para mejor legibilidad */
 }
 
 section#referencias {
