@@ -59,7 +59,7 @@
                     <li><strong>Fecha de Nacimiento:</strong> 26/01/2002</li>
                     <li><strong>Ciudadanía:</strong> Ecuatoriana</li>
                     <li><strong>Correo electrónico:</strong> maragile@espol.edu.ec</li>
-                    <li><strong>Resido en:</strong> Guayaquil, Ecuador</li>
+                    <li><strong>Ubicación:</strong> Guayaquil, Ecuador</li>
                   </ul>
                 </div>
             </section>
@@ -175,12 +175,38 @@
 
     </main>
 
-    <section>
+    <section id="referencias">
+        
+      <h2 class = "subtitle">Referencias</h2>
+
+      <article>
+        <img src="resources/anarod.jpg" alt="AnaRodriguezFoto" id="photo"/>
+        <blockquote>“Mario es un profesional comprometido y resolutivo. Siempre supera las expectativas.”</blockquote>
+        <p id="black">Ana Rodríguez
+        <br>Gerente de Tecnología en Soluciones Digitales</p>
+      </article>
+
+      <article>
+        <img src="resources/josema.jpg" alt="JoseMartinezFoto" id="photo"/>
+        <blockquote>“Trabajar con Mario fue una experiencia muy enriquecedora. Tiene gran iniciativa y atención al detalle.”</blockquote>
+        <p id="black">José Martínez<br>Coordinador de Desarrollo en InnovaSoft</p>
+      </article>
+
+      <article>
+        <img src="resources/luciperez.jpg" alt="LuciaPerezFoto" id="photo"/>
+        <blockquote>“Mario demuestra liderazgo natural y un alto nivel técnico en todos sus proyectos.”</blockquote>
+        <p id="black">Lucía Pérez<br>Líder de Proyectos en TechStart.</p>
+      </article>
+
+    </section>
+
+    <section id="contacto">
         <h2 class = "subtitle"> Contacto </h2>
         <p>Ubicación: Guayaquil, Ecuador</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0151653734274!2d-79.96456940000002!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1747844278366!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class = "mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0151653734274!2d-79.96456940000002!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1747844278366!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <form action = "#" method="post">
+                        <form action = "#" method="post">
             <fieldset>
                 <legend>Contactanos llenando todos los campos</legend>
                 
@@ -213,27 +239,14 @@
 
                 <fieldset>
                     <legend>¿Prefiere ser contactado por?</legend>
-
-                    <input type = "radio", name="contacto" value = "email" required>
-                    <label>Email</label>
-
-                    <input type = "radio", name="contacto" value = "celular" required>
-                    <label>Celular</label>
-
+                    <label><input type="radio" name="contacto" value="email"> Email</label>
+                    <label><input type="radio" name="contacto" value="celular"> Celular</label>
                 </fieldset>
-
                 <fieldset>
                     <legend>¿Qué le gusta?</legend>
-
-                    <input type = "checkbox", name="gustos" value = "perro" required>
-                    <label>Perro</label>
-
-                    <input type = "checkbox", name="contacto" value = "gato" required>
-                    <label>Gato</label>
-
-                    <input type = "checkbox", name="contacto" value = "badbunny" required>
-                    <label>Bad Bunny</label>
-
+                    <label><input type="checkbox" name="gusta" value="perro"> Perro</label>
+                    <label><input type="checkbox" name="gusta" value="gato"> Gato</label>
+                    <label><input type="checkbox" name="gusta" value="badbunny"> Bad Bunny</label>
                 </fieldset>
 
 
@@ -246,33 +259,13 @@
 
             </fieldset>
         </form>
-    </section>
 
-
-    <section id="referencias">
-        
-      <h2>Referencias</h2>
-
-      <article>
-        <img src="resources/anarod.jpg" alt="AnaRodriguezFoto" id="photo"/>
-        <blockquote>“Mario es un profesional comprometido y resolutivo. Siempre supera las expectativas.”</blockquote>
-        <p><span>Ana Rodríguez</span> 
-        <br>Gerente de Tecnología en Soluciones Digitales</p>
-      </article>
-
-      <article>
-        <img src="resources/josema.jpg" alt="JoseMartinezFoto" id="photo"/>
-        <blockquote>“Trabajar con Mario fue una experiencia muy enriquecedora. Tiene gran iniciativa y atención al detalle.”</blockquote>
-        <p><span>José Martínez</span><br>Coordinador de Desarrollo en InnovaSoft</p>
-      </article>
-
-      <article>
-        <img src="resources/luciperez.jpg" alt="LuciaPerezFoto" id="photo"/>
-        <blockquote>“Mario demuestra liderazgo natural y un alto nivel técnico en todos sus proyectos.”</blockquote>
-        <p><span>Lucía Pérez</span><br>Líder de Proyectos en TechStart.</p>
-      </article>
+            </div>
 
     </section>
+
+
+
 
     <footer>
         &copy; 2025 Curriculum DAWN - Mario Alvarado
